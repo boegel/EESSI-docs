@@ -1,0 +1,38 @@
+name: Update overview of available software in EESSI
+on:
+  - workflow_dispatch
+jobs:
+  update_available_software:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+          architecture: x64
+
+      - name: Mount EESSI
+        uses: eessi/github-action-eessi@v3.1.0
+        with:
+          eessi_stack_version: '2023.06'
+
+      - name: update overview of available software
+        run: |
+          cd scripts/available_software
+          
+          # install required Python packages in virtual environment
+          python -m venv venv
+          . venv/bin/activate
+          pip install -r requirements.txt
+
+          python available_software.py
+          git status
+
+      - name: create pull request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          commit-message: update overview of available software
+          branch: update-software-overview
+          branch-suffix: timestamp
