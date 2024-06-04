@@ -1,0 +1,37 @@
+Version: 7.0
+Codename: focal-prod
+Component: main
+Origin: CERN
+Label: CernVM
+Architecture: i386 amd64 arm64
+Date: Thu, 25 Apr 2024 09:40:28 +0000
+MD5Sum:
+ e8de7ba34fbd13c7c3a2a7a989dda7ec 2465 main/list.html
+ 84d1611ef999b1b67486ca7b7b756dc5 487 main/binary-i386/Packages.gz
+ 559105fb4aa31e0c19467631f9c62799 726 main/binary-i386/Packages
+ ecf8243e17487893bd14bb7dd3241be1 2566 main/binary-i386/list.html
+ 0841ee80fadfd8122b21b5c359c4a7d8 534 main/binary-i386/Packages.bz2
+ 690208e51d6d7e51ec907dff799377ce 1803 main/binary-amd64/Packages.gz
+ 001f1d7647878e677820bdc7cdfef2e7 5328 main/binary-amd64/Packages
+ 0ad8429950412b15f00e4a80d6f0a641 2551 main/binary-amd64/list.html
+ 9496d93ef0680a20c30bbca088495243 1913 main/binary-amd64/Packages.bz2
+SHA1:
+ a52d93028d04975126ab5f7722c0249cb1a0f703 2465 main/list.html
+ 25162a137d34af4369ff27270e79782745a9464b 487 main/binary-i386/Packages.gz
+ bf741035945015bb4d0f694d0ac066a97bb42e87 726 main/binary-i386/Packages
+ f94cab8a87059b610bf8d48b2646a02bcc3b2fe0 2566 main/binary-i386/list.html
+ b123f504d5c9933261aa4c3ba4ddb303c773d83f 534 main/binary-i386/Packages.bz2
+ 0e638a17cc54ff655b159e20c19ed6ca3103a41a 1803 main/binary-amd64/Packages.gz
+ bf9ac67b783c7f3f0303437aa683a0ac290f3a72 5328 main/binary-amd64/Packages
+ 009edcc2ba5100a6112690bd4692c8f704187bce 2551 main/binary-amd64/list.html
+ e28d00f4102d228cbfa29d94e15527f868c39e41 1913 main/binary-amd64/Packages.bz2
+SHA256:
+ 2a1cba013be6031eaf1d03fdfd0f5ee4a483e6ed73b8a0bbee78f0b19f9554d6 2465 main/list.html
+ 9bc6a342510755d1882fe52770c7cbcdee8b63bb6ce200fd8e6066f11ec3007b 487 main/binary-i386/Packages.gz
+ c233b6771cea2634ac3ddae7513669eaa3cffce66ae80831c6cb5dbee6bd5eb2 726 main/binary-i386/Packages
+ f55743e232266acff5119355e41bbfaa8dff2dec2e261b8388fc26fc849ca471 2566 main/binary-i386/list.html
+ 1bda661c62f2bf53f6ca71f56c8e08d9519be4afb05c88cf88bbe37817fd1083 534 main/binary-i386/Packages.bz2
+ 6cbe5c94f3ed6a6214ab81e827bf9d48c2bd2028d2d161e0918ec1b4eed6f042 1803 main/binary-amd64/Packages.gz
+ a0134c38054fd0c599c6a64ce31b441605f239e6f9b956dc9cfb1a2cad15358b 5328 main/binary-amd64/Packages
+ fb8f3ea4b84a5199f51b3f6b9bba1d734f6faef62c9b7f9ae3c8c981531b5943 2551 main/binary-amd64/list.html
+ dc8679b42cc8b6f9110ab522a07f44c3411290a5b4ee20de643de89f6d1772b1 1913 main/binary-amd64/Packages.bz2
