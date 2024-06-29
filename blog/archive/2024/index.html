@@ -1755,14 +1755,14 @@ like <a href="https://doc.vega.izum.si">Vega</a> and <a href="https://docs.it4i.
 <p>On 27 June 2024, an additional installation of ESPResSo v4.2.2 that is optimized for Arm A64FX processors
 was added, which enables also running ESPResSo efficiently on <a href="https://docs.macc.fccn.pt/deucalion">Deucalion</a>,
 even though EESSI is not available yet system-wide on Deucalion (see below for more details).</p>
-<p>With the portable test for ESPResSo that is available in the <a href="https://www.eessi.io/docs/test-suite">EESSI test suite</a>
-since v0.3.0 (released on 27 June 2024), we can now easily evaluate the scalability of
+<p>With the <a href="https://www.eessi.io/docs/test-suite/available-tests/#espresso">portable test for ESPResSo</a> that is available
+in the <a href="https://www.eessi.io/docs/test-suite">EESSI test suite</a> we can easily evaluate the scalability of
 ESPResSo across EuroHPC systems, even if those systems have different system architectures.</p>
 <h3 id="simulating-lennard-jones-fluids-using-espresso"><a class="toclink" href="../../2024/06/28/espresso-portable-test-run-eurohpc/#simulating-lennard-jones-fluids-using-espresso">Simulating Lennard-Jones fluids using ESPResSo</a></h3>
 <p><a href="https://en.wikipedia.org/wiki/Lennard-Jones_potential">Lennard-Jones fluids</a> model interacting soft spheres with a potential that is weakly attractive at medium range and strongly repulsive at short range. Originally designed to model noble gases, this simple setup now underpins most particle-based simulations, such as ionic liquids, polymers, proteins and colloids, where strongly repulsive pairwise potentials are desirable to prevent particles from overlapping with one another. In addition, solvated systems with atomistic resolution typically have a large excess of solvent atoms compared to solute atoms, thus Lennard-Jones interactions tend to account for a large portion of the simulation time. Compared to other potentials, the Lennard-Jones interaction is inexpensive to calculate, and its limited range allows us to partition the simulation domain into arbitrarily small regions that can be distributed to many processors.</p>
 <h3 id="portable-test-to-evaluate-performance-of-espresso"><a class="toclink" href="../../2024/06/28/espresso-portable-test-run-eurohpc/#portable-test-to-evaluate-performance-of-espresso">Portable test to evaluate performance of ESPResSo</a></h3>
 <p>To evaluate the performance of ESPResSo, we have implemented a <em>portable test</em> for ESPResSo in the <a href="https://www.eessi.io/docs/test-suite">EESSI test suite</a>;
-the results shown here were collected using <a href="https://github.com/EESSI/test-suite/releases/tag/v0.3.1">version 0.3.1</a>.</p>
+the results shown here were collected using <a href="https://github.com/EESSI/test-suite/releases/tag/v0.3.2">version 0.3.2</a>.</p>
 <p>After <a href="https://www.eessi.io/docs/test-suite/installation-configuration">installing and configuring</a> the EESSI test suite on Vega, Karolina, and Deucalion,
 running the Lennard-Jones (LJ) test case with ESPResSo 4.2.2 available in EESSI can be done with:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a>reframe<span class="w"> </span>--name<span class="w"> </span><span class="s2">&quot;ESPRESSO_LJ.*%module_name=ESPResSo/4.2.2&quot;</span>
@@ -1775,14 +1775,12 @@ in the EESSI test suite, which range from single core up to 8 full nodes.</p>
 On Vega using 8 nodes (1024 MPI ranks, one per physical core), ESPResSo 4.2.2 can integrate the equations of motion of roughly 615 million particles every second.
 On Deucalion using 8 nodes (384 cores), we observe a performance of roughly 62 million particles integrated per second.</p>
 <figure>
-<img alt="Performance of ESPResSo 4.2.2 on Vega, Karolina, Deucalion" src="../../2024/06/espresso-4.2.2-foss-2023a-perf-part-sec-vega-karolina-deucalion-20240628.png" width="100%" />
-<figcaption>Figure 1: Performance of ESPResSo 4.2.2 (weak scaling)</figcaption>
+<img alt="Performance of ESPResSo 4.2.2 on Vega, Karolina, Deucalion" src="../../2024/06/espresso-4.2.2-foss-2023a-perf-part-sec-vega-karolina-deucalion-20240628.svg" width="100%" />
 </figure>
 <p>Plotting the parallel efficiency of ESPResSo 4.2.2 (weak scaling, 2000 particles per MPI rank) on the three EuroHPC systems we used
 shows that it decreases approximately linearly with the logarithm of the number of cores.</p>
 <figure>
-<img alt="Parallel efficiency of ESPResSo 4.2.2 on Vega, Karolina, Deucalion" src="../../2024/06/espresso-4.2.2-foss-2023a-parallel-efficiency-vega-karolina-deucalion-20240628.png" width="100%" />
-<figcaption>Figure 2: Parallel efficiency (weak scaling) of ESPResSo 4.2.2</figcaption>
+<img alt="Parallel efficiency of ESPResSo 4.2.2 on Vega, Karolina, Deucalion" src="../../2024/06/espresso-4.2.2-foss-2023a-parallel-efficiency-vega-karolina-deucalion-20240628.svg" width="100%" />
 </figure>
 <hr />
 <h3 id="running-espresso-on-deucalion-via-eessi-cvmfsexec"><a class="toclink" href="../../2024/06/28/espresso-portable-test-run-eurohpc/#running-espresso-on-deucalion-via-eessi-cvmfsexec">Running ESPResSo on Deucalion via EESSI + <code>cvmfsexec</code></a></h3>
@@ -1835,7 +1833,7 @@ environment and get access to the ESPResSo v4.2.2 installation that is available
 we also had to create a small wrapper script for the <a href="https://www.open-mpi.org/doc/v4.1/man1/orted.1.php"><code>orted</code>
 command</a> that is used by <a href="https://www.open-mpi.org">Open MPI</a>
 to start processes on remote nodes.
-This is necessary because <code>mpirun</code> launches <code>orted</code>, which must be run in an environment is which the EESSI repository
+This is necessary because <code>mpirun</code> launches <code>orted</code>, which must be run in an environment in which the EESSI repository
 is mounted.
 If not, MPI startup will fail with an error like "<code>error: execve(): orted: No such file or directory</code>".</p>
 <p>This wrapper script must be named <code>orted</code>, and must be located in a path that is listed in <code>$PATH</code>.</p>
@@ -1877,7 +1875,7 @@ simulation via <code>mpirun</code>:</p>
 <a id="__codelineno-17-14" name="__codelineno-17-14" href="#__codelineno-17-14"></a><span class="s">mpirun -np 96 python3 lj.py</span>
 <a id="__codelineno-17-15" name="__codelineno-17-15" href="#__codelineno-17-15"></a><span class="s">EOF</span>
 </code></pre></div></p>
-<p><em>(the <code>lj.py</code> Python script is available in the EESSI test suite, see <a href="https://github.com/EESSI/test-suite/blob/v0.3.0/eessi/testsuite/tests/apps/espresso/src/lj.py">here</a>)</em></p>
+<p><em>(the <code>lj.py</code> Python script is available in the EESSI test suite, see <a href="https://github.com/EESSI/test-suite/blob/v0.3.2/eessi/testsuite/tests/apps/espresso/src/lj.py">here</a>)</em></p>
     
   </div>
 </article>
