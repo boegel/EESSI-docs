@@ -11,14 +11,17 @@
         <link rel="canonical" href="https://eessi.github.io/docs/bot/">
       
       
-        <link rel="prev" href="../adding_software/debugging_failed_builds/">
+        <link rel="prev" href="../adding_software/adding_development_software/">
       
       
         <link rel="next" href="../adding_software/building_software/">
       
       
+        
+      
+      
       <link rel="icon" href="../img/logos/EESSI.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.42">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
     
     
       
@@ -26,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.0253249f.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
       
       
 
@@ -45,13 +48,18 @@
       
     
     
+      <link rel="stylesheet" href="../assets/_mkdocstrings.css">
+    
       <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
+    
+      <link rel="stylesheet" href="../available_software/css/software.css">
+    
+      <link rel="stylesheet" href="https://cdn.datatables.net/2.2.2/css/dataTables.semanticui.cssoftwares">
     
     <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
 
-    
     
     
   </head>
@@ -113,11 +121,13 @@
     
     
     
-      <label class="md-header__button md-icon" for="__search">
-        
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
-      </label>
-      <div class="md-search" data-md-component="search" role="dialog">
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
@@ -149,13 +159,14 @@
     </div>
   </div>
 </div>
+      
     
     
       <div class="md-header__source">
         <a href="https://github.com/EESSI" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     EESSI @ GitHub
@@ -200,7 +211,7 @@
       <a href="https://github.com/EESSI" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
   </div>
   <div class="md-source__repository">
     EESSI @ GitHub
@@ -220,9 +231,16 @@
       <a href=".." class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Home
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -240,6 +258,7 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
@@ -250,9 +269,16 @@
           <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Design
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
@@ -261,7 +287,11 @@
         <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
           <label class="md-nav__title" for="__nav_2">
             <span class="md-nav__icon md-icon"></span>
-            Design
+            
+  
+    Design
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -275,9 +305,16 @@
       <a href="../overview/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Project overview
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -296,9 +333,16 @@
       <a href="../filesystem_layer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Filesystem layer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -317,9 +361,16 @@
       <a href="../compatibility_layer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Compatibility layer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -338,9 +389,16 @@
       <a href="../software_layer/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Software layer
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -359,9 +417,44 @@
       <a href="../software_layer/cpu_targets/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Supported CPU targets
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../software_layer/gpu_targets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Supported GPU targets
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -383,6 +476,34 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../available_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Available software
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
     
     
     
@@ -391,24 +512,82 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
         
           
-          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
-    Available software and repositories
+    
+  
+    Repositories
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
             <span class="md-nav__icon md-icon"></span>
-            Available software and repositories
+            
+  
+    Repositories
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_4_1" id="__nav_4_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Production
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -419,12 +598,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../available_software/overview/" class="md-nav__link">
+      <a href="../repositories/software.eessi.io/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Software
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -439,51 +625,31 @@
   
   
   
-    
-    
-    
-    
-    <li class="md-nav__item md-nav__item--nested">
-      
+    <li class="md-nav__item">
+      <a href="../repositories/versions/" class="md-nav__link">
         
-        
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
-        
-          
-          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
-            
+  
   
   <span class="md-ellipsis">
-    Repositories
-  </span>
+    
+  
+    Versions
   
 
-            <span class="md-nav__icon md-icon"></span>
-          </label>
-        
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_3_2">
-            <span class="md-nav__icon md-icon"></span>
-            Repositories
-          </label>
-          <ul class="md-nav__list" data-md-scrollfix>
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../repositories/software.eessi.io/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    Production
+    
   </span>
+  
   
 
       </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -499,9 +665,16 @@
       <a href="../repositories/riscv.eessi.io/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     RISC-V
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -517,12 +690,19 @@
   
   
     <li class="md-nav__item">
-      <a href="../repositories/pilot/" class="md-nav__link">
+      <a href="../repositories/dev.eessi.io/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Pilot
+    
+  
+    Development repository
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -537,14 +717,6 @@
     </li>
   
 
-              
-            
-          </ul>
-        </nav>
-      
-    </li>
-  
-
     
       
       
@@ -552,6 +724,7 @@
   
   
   
+    
     
     
     
@@ -560,24 +733,35 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
         
           
-          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Installation and configuration
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
             <span class="md-nav__icon md-icon"></span>
-            Installation and configuration
+            
+  
+    Installation and configuration
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -591,9 +775,16 @@
       <a href="../getting_access/is_eessi_accessible/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Is EESSI already installed?
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -612,9 +803,16 @@
       <a href="../getting_access/native_installation/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Native
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -633,9 +831,16 @@
       <a href="../getting_access/eessi_container/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Container
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -654,28 +859,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_4" >
         
           
-          <label class="md-nav__link" for="__nav_4_4" id="__nav_4_4_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_4" id="__nav_5_4_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Windows and macOS
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_4">
             <span class="md-nav__icon md-icon"></span>
-            Windows and macOS
+            
+  
+    Windows and macOS
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -689,9 +906,16 @@
       <a href="../getting_access/eessi_wsl/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Windows with WSL
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -710,9 +934,16 @@
       <a href="../getting_access/eessi_limactl/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     macOS with Lima
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -739,28 +970,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_5" >
         
           
-          <label class="md-nav__link" for="__nav_4_5" id="__nav_4_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_5_5" id="__nav_5_5_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Configuring EESSI
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_4_5">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5_5">
             <span class="md-nav__icon md-icon"></span>
-            Configuring EESSI
+            
+  
+    Configuring EESSI
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -774,9 +1017,16 @@
       <a href="../site_specific_config/host_injections/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     How to configure EESSI
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -795,9 +1045,16 @@
       <a href="../site_specific_config/gpu/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     GPU support
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -816,9 +1073,16 @@
       <a href="../site_specific_config/lmod_hooks/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Custom LMOD hooks
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -852,28 +1116,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
         
           
-          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Basic usage
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_5">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
             <span class="md-nav__icon md-icon"></span>
-            Basic usage
+            
+  
+    Basic usage
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -887,9 +1163,16 @@
       <a href="../using_eessi/setting_up_environment/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Set up environment
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -908,9 +1191,16 @@
       <a href="../using_eessi/basic_commands/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Basic commands
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -929,9 +1219,16 @@
       <a href="../using_eessi/eessi_demos/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Demos
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -950,9 +1247,16 @@
       <a href="../using_eessi/eessi_in_ci/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     EESSI in CI
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -978,28 +1282,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" >
         
           
-          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Advanced usage
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
             <span class="md-nav__icon md-icon"></span>
-            Advanced usage
+            
+  
+    Advanced usage
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1013,9 +1329,16 @@
       <a href="../filesystem_layer/stratum1/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Setting up your Stratum
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1034,9 +1357,16 @@
       <a href="../using_eessi/building_on_eessi/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Building software with EESSI
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1055,28 +1385,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_3" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" >
         
           
-          <label class="md-nav__link" for="__nav_6_3" id="__nav_6_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Test suite
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_3_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3">
             <span class="md-nav__icon md-icon"></span>
-            Test suite
+            
+  
+    Test suite
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1090,9 +1432,16 @@
       <a href="../test-suite/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1111,9 +1460,16 @@
       <a href="../test-suite/installation-configuration/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Installation & configuration
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1132,9 +1488,16 @@
       <a href="../test-suite/ReFrame-configuration-file/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     ReFrame configuration file
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1153,9 +1516,16 @@
       <a href="../test-suite/usage/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Usage
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1174,9 +1544,16 @@
       <a href="../test-suite/available-tests/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Available tests
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1195,9 +1572,16 @@
       <a href="../test-suite/writing-portable-tests/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Writing tests
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1216,9 +1600,1053 @@
       <a href="../test-suite/release-notes/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Release notes
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_3_8" id="__nav_7_3_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    API documentation
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_7_3_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    API documentation
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    eessi
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1" id="__nav_7_3_8_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_7_3_8_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    eessi
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    testsuite
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1" id="__nav_7_3_8_1_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="5" aria-labelledby="__nav_7_3_8_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    testsuite
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/common_config/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    common_config
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/constants/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    constants
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/eessi_mixin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    eessi_mixin
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/hooks/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    hooks
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tests
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5" id="__nav_7_3_8_1_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="6" aria-labelledby="__nav_7_3_8_1_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    tests
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    apps
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1" id="__nav_7_3_8_1_1_5_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="7" aria-labelledby="__nav_7_3_8_1_1_5_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    apps
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/MetalWalls/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    MetalWalls
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/PyTorch/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PyTorch
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_2" id="__nav_7_3_8_1_1_5_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    PyTorch
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/PyTorch/PyTorch_torchvision/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PyTorch_torchvision
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_2_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/PyTorch/src/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    src
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_2_2" id="__nav_7_3_8_1_1_5_1_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="9" aria-labelledby="__nav_7_3_8_1_1_5_1_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    src
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/PyTorch/src/get_free_socket/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    get_free_socket
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/PyTorch/src/pytorch_synthetic_benchmark/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    pytorch_synthetic_benchmark
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/QuantumESPRESSO/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QuantumESPRESSO
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_4" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/cp2k/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cp2k
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_4" id="__nav_7_3_8_1_1_5_1_4_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    cp2k
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/cp2k/cp2k/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cp2k
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_4_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/cp2k/src/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    src
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_4_2" id="__nav_7_3_8_1_1_5_1_4_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="9" aria-labelledby="__nav_7_3_8_1_1_5_1_4_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_4_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    src
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/cp2k/src/QS/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    QS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_5" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/espresso/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    espresso
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_5" id="__nav_7_3_8_1_1_5_1_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    espresso
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/espresso/espresso/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    espresso
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_5_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/espresso/src/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    src
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_5_2" id="__nav_7_3_8_1_1_5_1_5_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="9" aria-labelledby="__nav_7_3_8_1_1_5_1_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    src
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_5_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/espresso/src/lb/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lb
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_5_2_1" id="__nav_7_3_8_1_1_5_1_5_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="10" aria-labelledby="__nav_7_3_8_1_1_5_1_5_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_5_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    lb
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/espresso/src/lb/lb/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lb
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1245,28 +2673,2128 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_6_4" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_5_2_2" >
         
           
-          <label class="md-nav__link" for="__nav_6_4" id="__nav_6_4_label" tabindex="0">
-            
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/espresso/src/lj/__init__/" class="md-nav__link ">
+              
+  
   
   <span class="md-ellipsis">
-    Known issues and workarounds
+    
+  
+    lj
+  
+
+    
   </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_5_2_2" id="__nav_7_3_8_1_1_5_1_5_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="10" aria-labelledby="__nav_7_3_8_1_1_5_1_5_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_5_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    lj
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/espresso/src/lj/lj/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lj
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_5_2_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/espresso/src/p3m/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    p3m
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_5_2_3" id="__nav_7_3_8_1_1_5_1_5_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="10" aria-labelledby="__nav_7_3_8_1_1_5_1_5_2_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_5_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    p3m
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/espresso/src/p3m/madelung/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    madelung
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/gromacs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    gromacs
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_7" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/lammps/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lammps
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_7" id="__nav_7_3_8_1_1_5_1_7_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    lammps
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/lammps/lammps/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lammps
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_7_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/lammps/src/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    src
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_7_2" id="__nav_7_3_8_1_1_5_1_7_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="9" aria-labelledby="__nav_7_3_8_1_1_5_1_7_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_7_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    src
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_7_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/lammps/src/ALL%2BOBMD/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ALL+OBMD
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_7_2_1" id="__nav_7_3_8_1_1_5_1_7_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="10" aria-labelledby="__nav_7_3_8_1_1_5_1_7_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_7_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    ALL+OBMD
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/lammps/src/ALL%2BOBMD/generate_obmd_input/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    generate_obmd_input
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/lammps/src/lj/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lj
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/lammps/src/rhodo/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    rhodo
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_8" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/lbmpy-pssrt/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lbmpy-pssrt
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_8" id="__nav_7_3_8_1_1_5_1_8_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    lbmpy-pssrt
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/lbmpy-pssrt/lbmpy-pssrt/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lbmpy-pssrt
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_8_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/lbmpy-pssrt/src/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    src
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_8_2" id="__nav_7_3_8_1_1_5_1_8_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="9" aria-labelledby="__nav_7_3_8_1_1_5_1_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_8_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    src
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/lbmpy-pssrt/src/mixing_layer_2D/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    mixing_layer_2D
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_9" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/lpc3d/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lpc3d
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_9" id="__nav_7_3_8_1_1_5_1_9_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_9">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    lpc3d
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/lpc3d/lpc3d/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    lpc3d
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_10" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/numpy/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    numpy
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_10" id="__nav_7_3_8_1_1_5_1_10_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_10_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_10">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    numpy
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/numpy/numpy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    numpy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_10_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/numpy/src/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    src
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_10_2" id="__nav_7_3_8_1_1_5_1_10_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="9" aria-labelledby="__nav_7_3_8_1_1_5_1_10_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_10_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    src
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/numpy/src/np_ops/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    np_ops
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_11" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    openfoam
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_11" id="__nav_7_3_8_1_1_5_1_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_11_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_11">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    openfoam
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/openfoam/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    openfoam
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_11_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    src
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_11_2" id="__nav_7_3_8_1_1_5_1_11_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="9" aria-labelledby="__nav_7_3_8_1_1_5_1_11_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    src
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_11_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    cavity3D
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_11_2_1" id="__nav_7_3_8_1_1_5_1_11_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="10" aria-labelledby="__nav_7_3_8_1_1_5_1_11_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_11_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    cavity3D
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/1M/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    1M
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/64M/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    64M
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_11_2_1_3" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/8M/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    8M
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_11_2_1_3" id="__nav_7_3_8_1_1_5_1_11_2_1_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="11" aria-labelledby="__nav_7_3_8_1_1_5_1_11_2_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_11_2_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    8M
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_11_2_1_3_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/8M/fixedIter/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    fixedIter
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_11_2_1_3_1" id="__nav_7_3_8_1_1_5_1_11_2_1_3_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="12" aria-labelledby="__nav_7_3_8_1_1_5_1_11_2_1_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_11_2_1_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    fixedIter
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/8M/fixedIter/0/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    0
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/8M/fixedIter/constant/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    constant
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/8M/fixedIter/system/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    system
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/8M/fixedTol/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    fixedTol
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/openfoam/src/cavity3D/evalLogCalcFixedIter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    evalLogCalcFixedIter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/osu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    osu
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_13" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/tensorflow/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tensorflow
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_13" id="__nav_7_3_8_1_1_5_1_13_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_13">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    tensorflow
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_13_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/tensorflow/src/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    src
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_13_1" id="__nav_7_3_8_1_1_5_1_13_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="9" aria-labelledby="__nav_7_3_8_1_1_5_1_13_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_13_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    src
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/tensorflow/src/mnist_setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    mnist_setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/tensorflow/src/tf_test/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tf_test
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/tensorflow/tensorflow/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    tensorflow
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_1_14" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/apps/walberla/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    walberla
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_1_14" id="__nav_7_3_8_1_1_5_1_14_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_1_14_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_1_14">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    walberla
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/apps/walberla/walberla/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    walberla
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_2" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/libs/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    libs
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_2" id="__nav_7_3_8_1_1_5_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="7" aria-labelledby="__nav_7_3_8_1_1_5_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    libs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3_8_1_1_5_2_1" >
+        
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../testsuite_api/eessi/testsuite/tests/libs/blas/__init__/" class="md-nav__link ">
+              
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    blas
+  
+
+    
+  </span>
+  
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_7_3_8_1_1_5_2_1" id="__nav_7_3_8_1_1_5_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="8" aria-labelledby="__nav_7_3_8_1_1_5_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_3_8_1_1_5_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    blas
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/libs/blas/blas/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    blas
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/tests/libs/blas/src/__init__/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    src
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../testsuite_api/eessi/testsuite/utils/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    utils
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Known issues and workarounds
+  
+
+    
+  </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_6_4_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_6_4">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
             <span class="md-nav__icon md-icon"></span>
-            Known issues and workarounds
+            
+  
+    Known issues and workarounds
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1280,9 +4808,16 @@
       <a href="../known_issues/eessi-2023.06/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     v2023.06
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1318,28 +4853,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" checked>
         
           
-          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Adding software to EESSI
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8">
             <span class="md-nav__icon md-icon"></span>
-            Adding software to EESSI
+            
+  
+    Adding software to EESSI
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1353,9 +4900,16 @@
       <a href="../adding_software/overview/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Overview
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1374,28 +4928,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_2" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_2" >
         
           
-          <label class="md-nav__link" for="__nav_7_2" id="__nav_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_2" id="__nav_8_2_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     For contributors
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_2_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_7_2">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8_2">
             <span class="md-nav__icon md-icon"></span>
-            For contributors
+            
+  
+    For contributors
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1409,9 +4975,16 @@
       <a href="../adding_software/contribution_policy/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Contribution policy
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1430,9 +5003,16 @@
       <a href="../adding_software/opening_pr/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Open PR
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1451,9 +5031,44 @@
       <a href="../adding_software/debugging_failed_builds/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Debugging
+  
+
+    
   </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding_software/adding_development_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Development repository
+  
+
+    
+  </span>
+  
   
 
       </a>
@@ -1482,28 +5097,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--active md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_7_3" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8_3" checked>
         
           
-          <label class="md-nav__link" for="__nav_7_3" id="__nav_7_3_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_8_3" id="__nav_8_3_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     For maintainers
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_3_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_7_3">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_8_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_8_3">
             <span class="md-nav__icon md-icon"></span>
-            For maintainers
+            
+  
+    For maintainers
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1526,9 +5153,16 @@
         <label class="md-nav__link md-nav__link--active" for="__toc">
           
   
+  
   <span class="md-ellipsis">
+    
+  
     BTD bot
+  
+
+    
   </span>
+  
   
 
           <span class="md-nav__icon md-icon"></span>
@@ -1537,9 +5171,16 @@
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     BTD bot
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1562,7 +5203,9 @@
         <li class="md-nav__item">
   <a href="#high-level-design" class="md-nav__link">
     <span class="md-ellipsis">
-      High-level design
+      
+        High-level design
+      
     </span>
   </a>
   
@@ -1572,7 +5215,9 @@
           <li class="md-nav__item">
   <a href="#event-handler" class="md-nav__link">
     <span class="md-ellipsis">
-      Event handler
+      
+        Event handler
+      
     </span>
   </a>
   
@@ -1581,7 +5226,9 @@
           <li class="md-nav__item">
   <a href="#job-manager" class="md-nav__link">
     <span class="md-ellipsis">
-      Job manager
+      
+        Job manager
+      
     </span>
   </a>
   
@@ -1595,7 +5242,9 @@
         <li class="md-nav__item">
   <a href="#basics" class="md-nav__link">
     <span class="md-ellipsis">
-      Basics
+      
+        Basics
+      
     </span>
   </a>
   
@@ -1605,7 +5254,9 @@
           <li class="md-nav__item">
   <a href="#permissions" class="md-nav__link">
     <span class="md-ellipsis">
-      Permissions
+      
+        Permissions
+      
     </span>
   </a>
   
@@ -1619,7 +5270,9 @@
         <li class="md-nav__item">
   <a href="#building" class="md-nav__link">
     <span class="md-ellipsis">
-      Building
+      
+        Building
+      
     </span>
   </a>
   
@@ -1629,7 +5282,9 @@
           <li class="md-nav__item">
   <a href="#filters" class="md-nav__link">
     <span class="md-ellipsis">
-      Filters
+      
+        Filters
+      
     </span>
   </a>
   
@@ -1639,7 +5294,9 @@
           <li class="md-nav__item">
   <a href="#combining-filters" class="md-nav__link">
     <span class="md-ellipsis">
-      Combining filters
+      
+        Combining filters
+      
     </span>
   </a>
   
@@ -1648,7 +5305,53 @@
           <li class="md-nav__item">
   <a href="#multiple-build-instructions" class="md-nav__link">
     <span class="md-ellipsis">
-      Multiple build instructions
+      
+        Multiple build instructions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#native-builds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native builds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-compiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-compiling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partial-filter-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partial filter matching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accelerator-filter-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accelerator filter matching
+      
     </span>
   </a>
   
@@ -1662,7 +5365,9 @@
           <li class="md-nav__item">
   <a href="#behind-the-scenes" class="md-nav__link">
     <span class="md-ellipsis">
-      Behind-the-scenes
+      
+        Behind-the-scenes
+      
     </span>
   </a>
   
@@ -1672,7 +5377,9 @@
           <li class="md-nav__item">
   <a href="#processing-build-instructions" class="md-nav__link">
     <span class="md-ellipsis">
-      Processing build instructions
+      
+        Processing build instructions
+      
     </span>
   </a>
   
@@ -1681,7 +5388,9 @@
           <li class="md-nav__item">
   <a href="#managing-build-jobs" class="md-nav__link">
     <span class="md-ellipsis">
-      Managing build jobs
+      
+        Managing build jobs
+      
     </span>
   </a>
   
@@ -1690,7 +5399,9 @@
           <li class="md-nav__item">
   <a href="#artefacts" class="md-nav__link">
     <span class="md-ellipsis">
-      Artefacts
+      
+        Artefacts
+      
     </span>
   </a>
   
@@ -1709,7 +5420,9 @@
         <li class="md-nav__item">
   <a href="#testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing
+      
+        Testing
+      
     </span>
   </a>
   
@@ -1718,7 +5431,9 @@
         <li class="md-nav__item">
   <a href="#deploying" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploying
+      
+        Deploying
+      
     </span>
   </a>
   
@@ -1728,7 +5443,9 @@
           <li class="md-nav__item">
   <a href="#behind-the-scenes_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Behind-the-scenes
+      
+        Behind-the-scenes
+      
     </span>
   </a>
   
@@ -1758,9 +5475,16 @@
       <a href="../adding_software/building_software/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Building software
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1779,9 +5503,16 @@
       <a href="../adding_software/deploying_software/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Deploying software
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1800,9 +5531,16 @@
       <a href="../software_layer/build_nodes/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Build nodes
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1836,28 +5574,40 @@
     
     
     
+    
     <li class="md-nav__item md-nav__item--nested">
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_8" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_9" >
         
           
-          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_9" id="__nav_9_label" tabindex="0">
             
   
+  
   <span class="md-ellipsis">
+    
+  
     Community and support
+  
+
+    
   </span>
+  
   
 
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_8">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_9_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_9">
             <span class="md-nav__icon md-icon"></span>
-            Community and support
+            
+  
+    Community and support
+  
+
           </label>
           <ul class="md-nav__list" data-md-scrollfix>
             
@@ -1871,9 +5621,16 @@
       <a href="../support/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Getting support
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1892,9 +5649,16 @@
       <a href="../meetings/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Meetings
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1913,9 +5677,16 @@
       <a href="../talks/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Talks
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1934,9 +5705,16 @@
       <a href="../contact/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Contact info
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -1959,15 +5737,299 @@
   
   
     <li class="md-nav__item">
-      <a href="../systems/" class="md-nav__link">
+      <a href="../training-events/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
-    Systems where EESSI is available
+    
+  
+    Training & events
+  
+
+    
   </span>
+  
   
 
       </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../systems/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systems where EESSI is available
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        
+          
+          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_12">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Governance
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance/charter/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Charter
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance/governance/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Governance
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance/policies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Policies
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance/code_of_conduct/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Code of Conduct
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance/terms_of_use/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Terms of Use
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../governance/steering_committee/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Current Steering Committee
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -1984,9 +6046,16 @@
       <a href="../blog/" class="md-nav__link">
         
   
+  
   <span class="md-ellipsis">
+    
+  
     Blog
+  
+
+    
   </span>
+  
   
 
       </a>
@@ -2023,7 +6092,9 @@
         <li class="md-nav__item">
   <a href="#high-level-design" class="md-nav__link">
     <span class="md-ellipsis">
-      High-level design
+      
+        High-level design
+      
     </span>
   </a>
   
@@ -2033,7 +6104,9 @@
           <li class="md-nav__item">
   <a href="#event-handler" class="md-nav__link">
     <span class="md-ellipsis">
-      Event handler
+      
+        Event handler
+      
     </span>
   </a>
   
@@ -2042,7 +6115,9 @@
           <li class="md-nav__item">
   <a href="#job-manager" class="md-nav__link">
     <span class="md-ellipsis">
-      Job manager
+      
+        Job manager
+      
     </span>
   </a>
   
@@ -2056,7 +6131,9 @@
         <li class="md-nav__item">
   <a href="#basics" class="md-nav__link">
     <span class="md-ellipsis">
-      Basics
+      
+        Basics
+      
     </span>
   </a>
   
@@ -2066,7 +6143,9 @@
           <li class="md-nav__item">
   <a href="#permissions" class="md-nav__link">
     <span class="md-ellipsis">
-      Permissions
+      
+        Permissions
+      
     </span>
   </a>
   
@@ -2080,7 +6159,9 @@
         <li class="md-nav__item">
   <a href="#building" class="md-nav__link">
     <span class="md-ellipsis">
-      Building
+      
+        Building
+      
     </span>
   </a>
   
@@ -2090,7 +6171,9 @@
           <li class="md-nav__item">
   <a href="#filters" class="md-nav__link">
     <span class="md-ellipsis">
-      Filters
+      
+        Filters
+      
     </span>
   </a>
   
@@ -2100,7 +6183,9 @@
           <li class="md-nav__item">
   <a href="#combining-filters" class="md-nav__link">
     <span class="md-ellipsis">
-      Combining filters
+      
+        Combining filters
+      
     </span>
   </a>
   
@@ -2109,7 +6194,53 @@
           <li class="md-nav__item">
   <a href="#multiple-build-instructions" class="md-nav__link">
     <span class="md-ellipsis">
-      Multiple build instructions
+      
+        Multiple build instructions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#native-builds" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Native builds
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cross-compiling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cross-compiling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#partial-filter-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Partial filter matching
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#accelerator-filter-matching" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Accelerator filter matching
+      
     </span>
   </a>
   
@@ -2123,7 +6254,9 @@
           <li class="md-nav__item">
   <a href="#behind-the-scenes" class="md-nav__link">
     <span class="md-ellipsis">
-      Behind-the-scenes
+      
+        Behind-the-scenes
+      
     </span>
   </a>
   
@@ -2133,7 +6266,9 @@
           <li class="md-nav__item">
   <a href="#processing-build-instructions" class="md-nav__link">
     <span class="md-ellipsis">
-      Processing build instructions
+      
+        Processing build instructions
+      
     </span>
   </a>
   
@@ -2142,7 +6277,9 @@
           <li class="md-nav__item">
   <a href="#managing-build-jobs" class="md-nav__link">
     <span class="md-ellipsis">
-      Managing build jobs
+      
+        Managing build jobs
+      
     </span>
   </a>
   
@@ -2151,7 +6288,9 @@
           <li class="md-nav__item">
   <a href="#artefacts" class="md-nav__link">
     <span class="md-ellipsis">
-      Artefacts
+      
+        Artefacts
+      
     </span>
   </a>
   
@@ -2170,7 +6309,9 @@
         <li class="md-nav__item">
   <a href="#testing" class="md-nav__link">
     <span class="md-ellipsis">
-      Testing
+      
+        Testing
+      
     </span>
   </a>
   
@@ -2179,7 +6320,9 @@
         <li class="md-nav__item">
   <a href="#deploying" class="md-nav__link">
     <span class="md-ellipsis">
-      Deploying
+      
+        Deploying
+      
     </span>
   </a>
   
@@ -2189,7 +6332,9 @@
           <li class="md-nav__item">
   <a href="#behind-the-scenes_1" class="md-nav__link">
     <span class="md-ellipsis">
-      Behind-the-scenes
+      
+        Behind-the-scenes
+      
     </span>
   </a>
   
@@ -2210,9 +6355,11 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
+
 
   
   
@@ -2220,7 +6367,7 @@
 
 <h1 id="build-test-deploy-bot">Build-test-deploy bot<a class="headerlink" href="#build-test-deploy-bot" title="Permanent link">&para;</a></h1>
 <p>Building, testing, and deploying software is done by one or more <em>bot instances</em>.</p>
-<p>The EESSI build-test-deploy bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f916.svg" title=":robot:" /> is implemented as a <a href="https://docs.github.com/en/apps/overview">GitHub App</a>
+<p>The EESSI build-test-deploy bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f916.svg" title=":robot:" /> is implemented as a <a href="https://docs.github.com/en/apps/overview">GitHub App</a>
 in the <a href="https://github.com/EESSI/eessi-bot-software-layer"><code>eessi-bot-software-layer</code> repository</a>.</p>
 <p>It operates in the context of <a href="../adding_software/opening_pr/#software_layer_pull_request">pull requests</a> to
 the <a href="https://github.com/EESSI/compatibility-layer"><code>compatibility-layer</code> repository</a> or the
@@ -2231,7 +6378,7 @@ so the procedure of adding software to EESSI is <em>semi-automatic</em>.</p>
 (see for example <a href="https://github.com/EESSI/software-layer/tree/2023.06/bot">here</a>), like <code>bot/build.sh</code>
 to build software, and <code>bot/check-result.sh</code> to check whether the software was built correctly.</p>
 <h2 id="high-level-design">High-level design<a class="headerlink" href="#high-level-design" title="Permanent link">&para;</a></h2>
-<p>The bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f916.svg" title=":robot:" /> consists of two components: the <em>event handler</em>, and the <em>job manager</em>.</p>
+<p>The bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f916.svg" title=":robot:" /> consists of two components: the <em>event handler</em>, and the <em>job manager</em>.</p>
 <h3 id="event-handler">Event handler<a class="headerlink" href="#event-handler" title="Permanent link">&para;</a></h3>
 <p>The bot event handler is responsible for handling
 <a href="https://docs.github.com/en/webhooks-and-events/events/github-event-types">GitHub events</a>
@@ -2246,11 +6393,11 @@ or adding a <code>bot:deploy</code> label (see <a href="#deploying">deploying</a
 when jobs completed.</p>
 <p>It runs every couple of minutes as a <a href="https://en.wikipedia.org/wiki/Cron">cron job</a>.</p>
 <h2 id="basics">Basics<a class="headerlink" href="#basics" title="Permanent link">&para;</a></h2>
-<p>Instructions for the bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f916.svg" title=":robot:" /> should always start with <code>bot:</code>.</p>
+<p>Instructions for the bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f916.svg" title=":robot:" /> should always start with <code>bot:</code>.</p>
 <p>To get help from the bot, post a comment with <code>bot: help</code>.</p>
 <p>To make the bot report how it is configured, post a comment with <code>bot: show_config</code>.</p>
 <h3 id="permissions">Permissions<a class="headerlink" href="#permissions" title="Permanent link">&para;</a></h3>
-<p>The bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f916.svg" title=":robot:" /> is configured to only act on instructions issued by specific GitHub accounts.</p>
+<p>The bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f916.svg" title=":robot:" /> is configured to only act on instructions issued by specific GitHub accounts.</p>
 <p>There are separate configuration options for allowing to send instructions to the bot,
 to trigger building of software, and to deploy software installations in to the EESSI repository.</p>
 <div class="admonition note">
@@ -2258,15 +6405,21 @@ to trigger building of software, and to deploy software installations in to the 
 <p>Ask for help in the <code>#software-layer-bot</code> channel of the EESSI Slack if needed!</p>
 </div>
 <h2 id="building">Building<a class="headerlink" href="#building" title="Permanent link">&para;</a></h2>
-<p>To instruct the bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f916.svg" title=":robot:" /> to build software, one or more <code>build</code> instructions
+<p>To instruct the bot <img alt="🤖" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f916.svg" title=":robot:" /> to build software, one or more <code>build</code> instructions
 should be issued by posting a comment in the pull request (see also <a href="../adding_software/building_software/#bot_build">here</a>).</p>
 <p>The most basic build instruction that can be sent to the bot is:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>bot: build
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>bot: build for:arch=&lt;for_arch&gt;
 </code></pre></div>
+<p>Where the <code>for_arch</code> could be e.g. <code>x64_64/amd/zen4</code>. This will trigger the bot to allocate a node of that type <em>and</em>
+build in the <code>/cvmfs/software.eessi.io/versions/&lt;eessi-version&gt;/software/linux/x86_64/amd/zen4</code> prefix.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <code>for:</code> (and <code>on:</code>, see below) argument to the bot were introduced in bot version 0.9.0. They replace the <code>architecture=... accelerator=...</code> syntax used in bot versions &lt;= v0.8.0.</p>
+</div>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Only use <code>bot: build</code> if you are confident that it is OK to do so.</p>
-<p>Most likely, you want to supply one or more filters to avoid that the bot builds for all its configurations.</p>
+<p>Most likely, you want to supply one or more filters to avoid that all bots are triggered to build for all
+configurations that match the above command.</p>
 </div>
 <h3 id="filters">Filters<a class="headerlink" href="#filters" title="Permanent link">&para;</a></h3>
 <p>Build instructions can include <em>filters</em> that are applied by each bot instance to determine which builds
@@ -2274,34 +6427,56 @@ should be executed, based on:</p>
 <ul>
 <li><code>instance</code>: the <code>name</code> of the bot instance, for example <code>instance:aws</code> for the bot instance running in AWS;</li>
 <li><code>repository</code>: the target repository, for example <code>eessi-2023.06-software</code> which corresponds to the 2023.06 version of the EESSI software layer;</li>
-<li><code>architecture</code>: the name of the <a href="../software_layer/cpu_targets/">CPU microarchitecture</a>, for example <code>x86_64/amd/zen2</code>;</li>
+<li><code>on:architecture=&lt;on_arch&gt;,accelerator=&lt;on_accelerator&gt;</code>: the name of the <a href="../software_layer/cpu_targets/">CPU microarchitecture</a> and GPU accelerator you want to build <em>on</em>, for example <code>on:architecture=x86_64/amd/zen4,accelerator=nvidia/cc90</code>;</li>
+<li><code>for:architecture=&lt;for_arch&gt;,accelerator=&lt;for_accelerator&gt;</code>: the name of the <a href="../software_layer/cpu_targets/">CPU microarchitecture</a> and GPU accelerator you want to build <em>for</em>, for example <code>for:architecture=x86_64/amd/zen4,accelerator=nvidia/cc90</code>;</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Use <code>:</code> as separator to specify a value for a particular filter, do not add spaces after the <code>:</code>.</p>
+<p>Use <code>:</code> as separator to specify a value for a particular argument, do not add spaces after the <code>:</code>.</p>
 <p>The bot recognizes shorthands for the supported filters, so you can use <code>inst:...</code> instead of <code>instance:...</code>,
-<code>repo:...</code> instead of <code>repository:...</code>, and <code>arch:...</code> instead of <code>architecture:...</code>.</p>
+<code>repo:...</code> instead of <code>repository:...</code>, and <code>arch=...</code> instead of <code>architecture=...</code>, and <code>accel=</code> instead of <code>accelerator</code>.</p>
 </div>
 <h4 id="combining-filters">Combining filters<a class="headerlink" href="#combining-filters" title="Permanent link">&para;</a></h4>
 <p>You can combine multiple filters in a single <code>build</code> instruction.
 Separate filters with a space, order of filters does not matter.</p>
 <p>For example:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>bot: build repo:eessi-hpc.org-2023.06-software arch:x86_64/amd/zen2
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>bot: build repo:eessi.io-2023.06-software for:arch=x86_64/amd/zen2
 </code></pre></div>
 <h4 id="multiple-build-instructions">Multiple build instructions<a class="headerlink" href="#multiple-build-instructions" title="Permanent link">&para;</a></h4>
 <p>You can issue multiple build instructions in a single comment, even across multiple bot instances,
 repositories, and CPU targets. Specify one build instruction per line.</p>
 <p>For example:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>bot: build repo:eessi-hpc.org-2023.06-software arch:x86_64/amd/zen3 inst:aws
-<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>bot: build repo:eessi-hpc.org-2023.06-software arch:aarch64/generic inst:azure
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>bot: build repo:eessi.io-2023.06-software for:arch=x86_64/amd/zen3 inst:aws
+<a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a>bot: build repo:eessi.io-2023.06-software for:arch=x86_64/amd/zen4 inst:azure
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The bot applies the filters with partial matching, which you can use to combine multiple build
-instructions into a single one.</p>
-<p>For example, if you only want to build for all <code>aarch64</code> CPU targets, you can use <code>arch:aarch64</code> as filter.</p>
-<p>The same applies to the <code>instance</code> and <code>repository</code> filters.</p>
+<h4 id="native-builds">Native builds<a class="headerlink" href="#native-builds" title="Permanent link">&para;</a></h4>
+<p>If you want to allocate the same node type that you want to build for, you can omit the <code>on:</code> argument.
+For example: <code>bot:build for:arch=x86_64/amd/zen4</code> is fully equivalent to <code>bot:build on:arch=x86_64/amd/zen4 for:arch=x86_64/amd/zen4</code>.</p>
+<h4 id="cross-compiling">Cross-compiling<a class="headerlink" href="#cross-compiling" title="Permanent link">&para;</a></h4>
+<p>The reason for the separate <code>on:</code> and <code>for:</code> arguments to exist is to allow cross-compilation, and to be specific about
+which architecture to allocate when doing so. The typical use case is to build GPU software on a CPU-only node.</p>
+<p>For example: <code>bot:build on:arch=x86_64/amd/zen2 for:arch=x86_64/amd/zen2,accel=nvidia/cc80</code> will instruct the bot to
+build on a <code>zen2</code> CPU-only node, for a combination of a <code>zen2</code> CPU with a GPU with CUDA Compute Capability 8.0.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Cross-compilation for different CPU targets can <em>not</em> be done with the current setup. This is not a limitation of
+the bot, but of the build scripts in the <code>software-layer-scripts</code> repository. The only thing the bot does is
+prepare a job directory in which the configuration passed through <code>for:</code> is stored in a <code>job.cfg</code> file. What is
+<em>done</em> with that information is up to the build scripts from <code>software-layer-scripts</code>. While these currently
+set the CUDA Compute Capability configuration item for EasyBuild based on the accelerator target defined in the
+<code>job.cfg</code>, the architecture target is <em>only</em> used to determine the installation path. It is <em>not</em> used to set
+EasyBuild's <code>optarch</code> configuration, which will still default to native optimization (i.e. for the host).</p>
 </div>
+<h4 id="partial-filter-matching">Partial filter matching<a class="headerlink" href="#partial-filter-matching" title="Permanent link">&para;</a></h4>
+<p>The bot applies the filters with partial matching, but <em>not</em> for the <code>for:</code> argument. I.e. you can do
+<code>bot:build on:arch=zen4 for:arch=x84_64/amd/zen4,accel=nvidia/cc80</code>, but not
+<code>bot:build on:arch=zen4 for:arch=zen4,accel=nvidia/cc80</code>
+The reason is that for the <code>on:</code> argument, the bot can compare against the configured node types to find a match
+(while for the <code>for:</code> argument, there is no such reference to match against).</p>
+<h4 id="accelerator-filter-matching">Accelerator filter matching<a class="headerlink" href="#accelerator-filter-matching" title="Permanent link">&para;</a></h4>
+<p>If the bot config declares that a node type has a certain accelerator, that node type will <em>only</em> be allocated
+if a corresponding <code>accel=&lt;on_accel&gt;</code> argument is passed. This is to avoid that <code>on:arch=x86_64/amd/zen4</code> would 
+cause builds to be triggered on a <code>zen4</code>+GPU node, while the same system also has a CPU-only <code>zen4</code> node type.</p>
 <h3 id="behind-the-scenes">Behind-the-scenes<a class="headerlink" href="#behind-the-scenes" title="Permanent link">&para;</a></h3>
 <h4 id="processing-build-instructions">Processing build instructions<a class="headerlink" href="#processing-build-instructions" title="Permanent link">&para;</a></h4>
 <p>When the bot receives build instructions through a comment in a pull request,
@@ -2315,7 +6490,7 @@ they are processed by the event handler component. It will:</p>
 <h4 id="managing-build-jobs">Managing build jobs<a class="headerlink" href="#managing-build-jobs" title="Permanent link">&para;</a></h4>
 <p>During the next iteration of the job manager, the submitted jobs are released and queued for execution.</p>
 <p>The job manager also monitors the running jobs at regular intervals, and reports back in the pull request
-when a job has completed. It also reports the result (<code>SUCCESS</code> <img alt="😁" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f601.svg" title=":grin:" /> or <code>FAILURE</code> <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.0.3/assets/svg/1f622.svg" title=":cry:" />), based on the result
+when a job has completed. It also reports the result (<code>SUCCESS</code> <img alt="😁" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f601.svg" title=":grin:" /> or <code>FAILURE</code> <img alt="😢" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f622.svg" title=":cry:" />), based on the result
 of the <code>bot/check-result.sh</code> script.</p>
 <h4 id="artefacts">Artefacts<a class="headerlink" href="#artefacts" title="Permanent link">&para;</a></h4>
 <p>If all goes well, each job should produce a tarball as an <em>artefact</em>,
@@ -2323,14 +6498,9 @@ which contains the software installations and the corresponding environment modu
 <p>The message reported by the job manager provides an overview of the contents of the artefact,
 which was created by the <code>bot/check-result.sh</code> script.</p>
 <h2 id="testing">Testing<a class="headerlink" href="#testing" title="Permanent link">&para;</a></h2>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>The test phase is not implemented yet in the bot.</p>
-<p>We intend to use the <a href="https://github.com/EESSI/test-suite">EESSI test suite</a>
-in different OS configurations to verify that the software that was built works as expected.</p>
-</div>
+<p>The bot also runs tests in the <a href="../test-suite/">EESSI test suite</a> if these match the software being installed. These tests are run after the build step by the bot through the <code>bot/test.sh</code> script. The mapping of which tests will run given the built software is defined in <code>tests/eessi_test_mapping/software_to_tests.yml</code>. Lastly, the job manager reports a summary of the test results created by the <code>bot/check-test.sh</code> script.</p>
 <h2 id="deploying">Deploying<a class="headerlink" href="#deploying" title="Permanent link">&para;</a></h2>
-<p>To deploy the artefacts that were obtained in the build phase, you should add the <code>bot: deploy</code> label
+<p>To deploy the artefacts that were obtained in the build phase, you should add the <code>bot:deploy</code> label
 to the pull request.</p>
 <p>This will trigger the event handler to upload the artefacts for ingestion into the EESSI repository.</p>
 <h3 id="behind-the-scenes_1">Behind-the-scenes<a class="headerlink" href="#behind-the-scenes_1" title="Permanent link">&para;</a></h3>
@@ -2339,11 +6509,13 @@ to the pull request.</p>
 <li>The bot deploys the artefacts (tarballs) to an S3 bucket in AWS, along with a metadata file, using the
   <a href="https://github.com/EESSI/eessi-bot-software-layer/blob/main/scripts/eessi-upload-to-staging"><code>eessi-upload-to-staging</code></a> script;</li>
 <li>A cron job that runs every couple of minutes on the CernVM-FS Stratum-0 server opens a pull request to
-  the (private) <a href="https://github.com/EESSI/staging">EESSI/staging</a> repository, to move the metadata file for
-  each uploaded tarball from the <code>staged</code> to the <code>approved</code> directory;</li>
-<li>Once that pull request gets merged, the target is automatically ingested into the EESSI repository by a cron job
-  on the Stratum-0 server, and the metadata file is moved from <code>approved</code> to <code>ingested</code> in the <code>EESSI/staging</code> repository;</li>
+  the (private) <a href="https://github.com/EESSI/staging_bundles">EESSI/staging_bundles</a> repository, to approve the uploaded tarballs
+  of the corresponding software layer PR for ingestion;</li>
+<li>Once that pull request gets merged, the tarballs are automatically ingested into the EESSI repository by a cron job
+  on the Stratum-0 server.</li>
 </ul>
+<p>If the staging PR contains a tarball that should not be ingested, e.g. in case of duplicate tarballs for a single CPU target,
+one can edit the <code>TaskState</code> file for the tarball that should be skipped, and change <code>APPROVED</code> to <code>REJECTED</code>.</p>
 
 
 
@@ -2364,7 +6536,7 @@ to the pull request.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2023</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 28, 2025 14:21:27 UTC">October 28, 2025</span>
   </span>
 
     
@@ -2401,7 +6573,8 @@ to the pull request.</p>
   
 </div>
       
-        <div class="md-social">
+        
+<div class="md-social">
   
     
     
@@ -2411,7 +6584,7 @@ to the pull request.</p>
       
     
     <a href="https://twitter.com/eessi_hpc" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M459.4 151.7c.3 4.5.3 9.1.3 13.6 0 138.7-105.6 298.6-298.6 298.6-59.5 0-114.7-17.2-161.1-47.1 8.4 1 16.6 1.3 25.3 1.3 49.1 0 94.2-16.6 130.3-44.8-46.1-1-84.8-31.2-98.1-72.8 6.5 1 13 1.6 19.8 1.6 9.4 0 18.8-1.3 27.6-3.6-48.1-9.7-84.1-52-84.1-103v-1.3c14 7.8 30.2 12.7 47.4 13.3-28.3-18.8-46.8-51-46.8-87.4 0-19.5 5.2-37.4 14.3-53C87.4 130.8 165 172.4 252.1 176.9c-1.6-7.8-2.6-15.9-2.6-24C249.5 95.1 296.3 48 354.4 48c30.2 0 57.5 12.7 76.7 33.1 23.7-4.5 46.5-13.3 66.6-25.3-7.8 24.4-24.4 44.8-46.1 57.8 21.1-2.3 41.6-8.1 60.4-16.2-14.3 20.8-32.2 39.3-52.6 54.3"/></svg>
     </a>
   
 </div>
@@ -2426,18 +6599,17 @@ to the pull request.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "..", "features": ["instant", "content.code.annotate"], "search": "../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["instant", "content.code.annotate"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../assets/javascripts/bundle.83f73b43.min.js"></script>
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs" type="module"></script>
       
-        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-      
-        <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
-      
-        <script src="../available_software/javascripts/populate_overview.js"></script>
+        <script src="../available_software/javascripts/software-filter.js"></script>
       
     
   </body>
