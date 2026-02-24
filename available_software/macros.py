@@ -5,6 +5,7 @@
 # license (SPDX): GPL-2.0-only
 #
 import json
+import os
 import urllib.request
 from pathlib import Path
 
@@ -14,6 +15,12 @@ CPU_ARCHS = {
     'x86_64': ['AMD', 'Intel'],
     'aarch64': ['Arm'],
     'riscv64': ['RISC-V'],
+}
+GPU_ARCHS = {
+    'amd': 'AMD',
+    'accel/amd': 'AMD',
+    'nvidia': 'NVIDIA',
+    'accel/nvidia': 'NVIDIA',
 }
 
 
@@ -25,8 +32,15 @@ def define_env(env):
         Load JSON with metadata for software.eessi.io repository,
         and return Python dictionary with relevant info to generate software overview in EESSI documentation.
         """
-        with urllib.request.urlopen(EESSI_API_SOFTWARE_JSON_URL) as response:
-            data = json.loads(response.read().decode('utf-8'))
+        # https://eessi.io/api_data/data/eessi_api_metadata_software.json is expected to be downloaded to docs/available_software/data/
+        root_dir = os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+        json_path = os.path.join(root_dir, 'docs', 'available_software', 'data', 'eessi_api_metadata_software.json')
+        if os.path.exists(json_path):
+            with open(json_path) as fp:
+                data = json.loads(fp.read())
+        else:
+            with urllib.request.urlopen(EESSI_API_SOFTWARE_JSON_URL) as response:
+                data = json.loads(response.read().decode('utf-8'))
 
         data_software = data['software']
         names = data_software.keys()
@@ -53,7 +67,18 @@ def define_env(env):
             licenses = ', '.join(y for x in versions for y in x['license'])
 
             # determine set of supported CPU families (first part of CPU target names, like x86_64 or aarch64)
-            cpu_families = set(c for v in versions for x in v['cpu_arch'] for c in CPU_ARCHS[x.split('/')[0]])
+            cpu_families = set()
+            for version in versions:
+                for cpu_arch in version['cpu_arch']:
+                    cpu_family = cpu_arch.split('/')[0]
+                    cpu_families.update(CPU_ARCHS.get(cpu_family, [cpu_family]))
+
+            # determine set of supported GPU families
+            gpu_families = set()
+            for version in versions:
+                for gpu_arch in [y for x in version['gpu_arch'].values() for y in x]:
+                    gpu_family = '/'.join(gpu_arch.split('/')[:-1])
+                    gpu_families.add(GPU_ARCHS.get(gpu_family, gpu_family))
 
             # EESSI versions in which this software is available
             eessi_versions = set()
@@ -65,7 +90,7 @@ def define_env(env):
                 'n_versions': len(versions),
                 'licenses': licenses,
                 'cpu_families': ', '.join(x for x in sorted(cpu_families)),
-                'gpu_families': '',
+                'gpu_families': ', '.join(x for x in sorted(gpu_families)),
                 'is_extension': False,
             }
 
