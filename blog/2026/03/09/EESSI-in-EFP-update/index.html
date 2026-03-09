@@ -6039,8 +6039,12 @@ is the perfect base for the EFP Federated Software Catalog.</p>
 <p>Not only will EESSI be available on all EuroHPC supercomputers, it lowers the barrier to entry to these systems
 because it is also available on <a href="../../../../../systems/">various other HPC systems</a>. This enables people to familiarize
 themselves with the software environment that will be available to them when they switch to a EuroHPC system.</p>
-<p>EESSI can also easily be installed in on-premise or commercial cloud environments.
-In addition, it can be used in <a href="../../../../../using_eessi/eessi_in_ci/">CI environments like GitHub Actions</a>,
+<p>EESSI can also easily be installed in on-premise or commercial cloud environments. As we saw in a
+<a href="../../../../2025/12/05/EESSI-on-K8s-PoC/">recent blog post</a>, EESSI can be used as a Kubernetes Container Storage Interface (CSI) plugin
+which makes it an excellent fit for some of the technologies we are likely to see in
+<a href="https://www.eurohpc-ju.europa.eu/ai-factories_en">EuroHPC AI Factories</a>.</p>
+<p>In addition, EESSI has further advantages from an end user perspective since it can also be used in
+<a href="../../../../../using_eessi/eessi_in_ci/">CI environments like GitHub Actions</a>,
 and on personal workstations running <a href="../../../../../getting_access/native_installation/">Linux</a>,
 or even in <a href="../../../../../getting_access/eessi_wsl/">Windows</a> or <a href="../../../../../getting_access/eessi_limactl/">macOS</a>
 by using a Linux virtual machine.</p>
@@ -6063,7 +6067,7 @@ as well as efficiently run entire workflows via the <em>EFP Workflows</em> compo
 These workflows may be executed not just within a single system, but even across multiple systems.</p>
 <p>Much of this is facilitated by the central internal API that is provided by the <em>EFP Allocations</em> component (based
 on <a href="https://waldur.com/">Waldur</a>), which allows other EFP components to query the contents of Federated Software Catalog
-by exposing the publicly available <a href="https://www.eessi.io/api_data/data/">EESSI data files</a>.</p>
+by providing an API that leverages the publicly available <a href="https://www.eessi.io/api_data/data/">EESSI data files</a>.</p>
 <h2 id="current-availability-of-eessi-on-eurohpc-supercomputers">Current availability of EESSI on EuroHPC supercomputers<a class="headerlink" href="#current-availability-of-eessi-on-eurohpc-supercomputers" title="Permanent link">&para;</a></h2>
 <p>EESSI is already available on 7 out of 9 of current <a href="https://www.eurohpc-ju.europa.eu/supercomputers/our-supercomputers_en">EuroHPC supercomputers</a>.</p>
 <p>This includes, in alphabetical order:</p>
@@ -6145,7 +6149,7 @@ should contact the EFP Helpdesk via <code>helpdesk (at) my-eurohpc.eu</code>.</p
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 9, 2026 09:03:05 UTC">March 9, 2026</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="March 9, 2026 09:54:39 UTC">March 9, 2026</span>
   </span>
 
     
