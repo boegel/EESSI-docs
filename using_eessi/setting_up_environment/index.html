@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../img/logos/EESSI.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -476,9 +476,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../available_software/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -492,7 +503,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Available software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../available_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../available_software_riscv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -662,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repositories/riscv.eessi.io/" class="md-nav__link">
+      <a href="../../repositories/dev.eessi.io-riscv/" class="md-nav__link">
         
   
   
@@ -939,6 +1022,34 @@
     
   
     macOS with Lima
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_access/eessi_Apple_container_tool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    macOS with container tool
   
 
     
@@ -1304,6 +1415,17 @@
     <span class="md-ellipsis">
       
         Module-based Initialization
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#eessi-extend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EESSI-extend
       
     </span>
   </a>
@@ -5654,6 +5776,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -5663,10 +5812,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
             
   
   
@@ -5684,8 +5833,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -6042,6 +6191,17 @@
   
 </li>
         
+          <li class="md-nav__item">
+  <a href="#eessi-extend" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EESSI-extend
+      
+    </span>
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -6190,7 +6350,7 @@ will return a best match between your system and the architectures it is aware o
 </code></pre></div></p>
 <p>To override the returned CPU architecture, you can set the environment variable <code>EESSI_SOFTWARE_SUBDIR_OVERRIDE</code> to a
 specific (expected) value:
-<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_SOFTWARE_SUBDIR_OVERRIDE</span><span class="o">=</span><span class="s2">&quot;x86_64/intel/haswell&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-13-1" name="__codelineno-13-1" href="#__codelineno-13-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_SOFTWARE_SUBDIR_OVERRIDE</span><span class="o">=</span><span class="s2">"x86_64/intel/haswell"</span>
 <a id="__codelineno-13-2" name="__codelineno-13-2" href="#__codelineno-13-2"></a><span class="c1"># Executed on an icelake system</span>
 <a id="__codelineno-13-3" name="__codelineno-13-3" href="#__codelineno-13-3"></a>$<span class="w"> </span>./eessi_archdetect.sh<span class="w"> </span>cpupath
 <a id="__codelineno-13-4" name="__codelineno-13-4" href="#__codelineno-13-4"></a>x86_64/intel/haswell
@@ -6253,7 +6413,7 @@ Note that the override value is not sanity checked, the end user is responsible 
 </tr>
 <tr>
 <td><code>EESSI_SOFTWARE_SUBDIR_OVERRIDE</code></td>
-<td>Overrides detected CPU software subdir (e.g. linux/x86_64/intel/icelake) for the main stack.</td>
+<td>Overrides detected CPU software subdir (e.g. x86_64/intel/icelake) for the main stack.</td>
 </tr>
 <tr>
 <td><code>EESSI_ACCELERATOR_TARGET_OVERRIDE</code></td>
@@ -6315,6 +6475,21 @@ Note that the override value is not sanity checked, the end user is responsible 
 </tr>
 </tbody>
 </table>
+<h3 id="eessi-extend">EESSI-extend<a class="headerlink" href="#eessi-extend" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>Environment variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>EESSI_EASYBUILD_HOOKS_OVERRIDE</code></td>
+<td>By default, EESSI-extend uses the same EasyBuild hooks that are used by EESSI for upstream builds. Setting this override will configure EasyBuild to use the hooks at <code>EESSI_EASYBUILD_HOOKS_OVERRIDE</code> instead. Can e.g. be used to prepend to the default EESSI hooks.</td>
+</tr>
+</tbody>
+</table>
 </details>
 <details class="tip">
 <summary>The accelerator modules are visible but I can't load them</summary>
@@ -6353,7 +6528,7 @@ combination.</p>
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="October 29, 2025 15:42:20 UTC">October 29, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="August 11, 2026 21:34:47 UTC">August 11, 2026</span>
   </span>
 
     
@@ -6380,11 +6555,16 @@ combination.</p>
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+      <!-- Copyright and theme information -->
+<div class="md-copyright">
+  
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a
+      href="https://squidfunk.github.io/mkdocs-material/"
+      target="_blank" rel="noopener"
+    >
       Material for MkDocs
     </a>
   
@@ -6422,7 +6602,7 @@ combination.</p>
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["instant", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs" type="module"></script>
       

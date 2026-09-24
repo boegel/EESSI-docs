@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../img/logos/EESSI.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -476,9 +476,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../available_software/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -492,7 +503,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Available software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../available_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../available_software_riscv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -662,7 +745,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repositories/riscv.eessi.io/" class="md-nav__link">
+      <a href="../../repositories/dev.eessi.io-riscv/" class="md-nav__link">
         
   
   
@@ -939,6 +1022,34 @@
     
   
     macOS with Lima
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_access/eessi_Apple_container_tool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    macOS with container tool
   
 
     
@@ -5617,6 +5728,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -5626,10 +5764,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
             
   
   
@@ -5647,8 +5785,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -6041,8 +6179,8 @@ mounted in /srt. Then you change the relevant commands below to this:
 <div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_TMPDIR</span><span class="o">=</span>/srt/<span class="nv">$USER</span>/EESSI
 <a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>mkdir<span class="w"> </span>-p<span class="w"> </span><span class="nv">$EESSI_TMPDIR</span>
 <a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>mkdir<span class="w"> </span>/srt/tmp
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SINGULARITY_BIND</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/var-run-cvmfs:/var/run/cvmfs,</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/var-lib-cvmfs:/var/lib/cvmfs,/srt/tmp:/tmp&quot;</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>singularity<span class="w"> </span>shell<span class="w"> </span>-B<span class="w"> </span>/srt<span class="w"> </span>--fusemount<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EESSI_READONLY</span><span class="s2">&quot;</span><span class="w"> </span>--fusemount<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EESSI_WRITABLE_OVERLAY</span><span class="s2">&quot;</span><span class="w"> </span>docker://ghcr.io/eessi/build-node:debian11
+<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SINGULARITY_BIND</span><span class="o">=</span><span class="s2">"</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/var-run-cvmfs:/var/run/cvmfs,</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/var-lib-cvmfs:/var/lib/cvmfs,/srt/tmp:/tmp"</span>
+<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>singularity<span class="w"> </span>shell<span class="w"> </span>-B<span class="w"> </span>/srt<span class="w"> </span>--fusemount<span class="w"> </span><span class="s2">"</span><span class="nv">$EESSI_READONLY</span><span class="s2">"</span><span class="w"> </span>--fusemount<span class="w"> </span><span class="s2">"</span><span class="nv">$EESSI_WRITABLE_OVERLAY</span><span class="s2">"</span><span class="w"> </span>docker://ghcr.io/eessi/build-node:debian11
 </code></pre></div></p>
 <p>We will assume that <code>/tmp/$USER/EESSI</code> meets these requirements:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_TMPDIR</span><span class="o">=</span>/tmp/<span class="nv">$USER</span>/EESSI
@@ -6054,16 +6192,16 @@ mounted in /srt. Then you change the relevant commands below to this:
 </code></pre></div>
 <p>Configure Singularity cache directory, bind mounts, and (fake) home directory:</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SINGULARITY_CACHEDIR</span><span class="o">=</span><span class="nv">$EESSI_TMPDIR</span>/singularity_cache
-<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SINGULARITY_BIND</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/var-run-cvmfs:/var/run/cvmfs,</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/var-lib-cvmfs:/var/lib/cvmfs&quot;</span>
-<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SINGULARITY_HOME</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/home:/home/</span><span class="nv">$USER</span><span class="s2">&quot;</span>
+<a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SINGULARITY_BIND</span><span class="o">=</span><span class="s2">"</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/var-run-cvmfs:/var/run/cvmfs,</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/var-lib-cvmfs:/var/lib/cvmfs"</span>
+<a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a><span class="nb">export</span><span class="w"> </span><span class="nv">SINGULARITY_HOME</span><span class="o">=</span><span class="s2">"</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/home:/home/</span><span class="nv">$USER</span><span class="s2">"</span>
 </code></pre></div>
 <p>Define values to pass to <code>--fusemount` in</code>singularity`` command:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_READONLY</span><span class="o">=</span><span class="s2">&quot;container:cvmfs2 software.eessi.io /cvmfs_ro/software.eessi.io&quot;</span>
-<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_WRITABLE_OVERLAY</span><span class="o">=</span><span class="s2">&quot;container:fuse-overlayfs -o lowerdir=/cvmfs_ro/software.eessi.io -o upperdir=</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/overlay-upper -o workdir=</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/overlay-work /cvmfs/software.eessi.io&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_READONLY</span><span class="o">=</span><span class="s2">"container:cvmfs2 software.eessi.io /cvmfs_ro/software.eessi.io"</span>
+<a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_WRITABLE_OVERLAY</span><span class="o">=</span><span class="s2">"container:fuse-overlayfs -o lowerdir=/cvmfs_ro/software.eessi.io -o upperdir=</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/overlay-upper -o workdir=</span><span class="nv">$EESSI_TMPDIR</span><span class="s2">/overlay-work /cvmfs/software.eessi.io"</span>
 </code></pre></div>
 <p>Start the container (which includes Debian 11, <a href="https://cernvm.cern.ch/fs/">CernVM-FS</a> and
 <a href="https://github.com/containers/fuse-overlayfs">fuse-overlayfs</a>):</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>singularity<span class="w"> </span>shell<span class="w"> </span>--fusemount<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EESSI_READONLY</span><span class="s2">&quot;</span><span class="w"> </span>--fusemount<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$EESSI_WRITABLE_OVERLAY</span><span class="s2">&quot;</span><span class="w"> </span>docker://ghcr.io/eessi/build-node:debian10
+<div class="highlight"><pre><span></span><code><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a>singularity<span class="w"> </span>shell<span class="w"> </span>--fusemount<span class="w"> </span><span class="s2">"</span><span class="nv">$EESSI_READONLY</span><span class="s2">"</span><span class="w"> </span>--fusemount<span class="w"> </span><span class="s2">"</span><span class="nv">$EESSI_WRITABLE_OVERLAY</span><span class="s2">"</span><span class="w"> </span>docker://ghcr.io/eessi/build-node:debian10
 </code></pre></div>
 <p>Once the container image has been downloaded and converted to a Singularity image (SIF format),
 you should get a prompt like this:</p>
@@ -6079,7 +6217,7 @@ you should get a prompt like this:</p>
 <h2 id="setting-up-the-environment">Setting up the environment<a class="headerlink" href="#setting-up-the-environment" title="Permanent link">&para;</a></h2>
 <p>Set up the environment by starting a Gentoo Prefix session using the <code>startprefix</code> command.</p>
 <p><strong>Make sure you use the correct version of the EESSI repository!</strong></p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_VERSION</span><span class="o">=</span><span class="s1">&#39;2023.06&#39;</span><span class="w"> </span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-9-1" name="__codelineno-9-1" href="#__codelineno-9-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_VERSION</span><span class="o">=</span><span class="s1">'2023.06'</span><span class="w"> </span>
 <a id="__codelineno-9-2" name="__codelineno-9-2" href="#__codelineno-9-2"></a>/cvmfs/software.eessi.io/versions/<span class="si">${</span><span class="nv">EESSI_VERSION</span><span class="si">}</span>/compat/linux/<span class="k">$(</span>uname<span class="w"> </span>-m<span class="k">)</span>/startprefix
 </code></pre></div>
 <h2 id="installing-software">Installing software<a class="headerlink" href="#installing-software" title="Permanent link">&para;</a></h2>
@@ -6100,14 +6238,14 @@ you should get a prompt like this:</p>
 <h2 id="creating-tarball-to-ingest">Creating tarball to ingest<a class="headerlink" href="#creating-tarball-to-ingest" title="Permanent link">&para;</a></h2>
 <p>Before tearing down the build node, you should create tarball to ingest into the EESSI CernVM-FS repository.</p>
 <p>To create a tarball of <em>all</em> installations, assuming your build host is <code>x86_64/intel/haswell</code>:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_VERSION</span><span class="o">=</span><span class="s1">&#39;2023.06&#39;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-14-1" name="__codelineno-14-1" href="#__codelineno-14-1"></a><span class="nb">export</span><span class="w"> </span><span class="nv">EESSI_VERSION</span><span class="o">=</span><span class="s1">'2023.06'</span>
 <a id="__codelineno-14-2" name="__codelineno-14-2" href="#__codelineno-14-2"></a><span class="nb">cd</span><span class="w"> </span>/cvmfs/software.eessi.io/versions/<span class="si">${</span><span class="nv">EESSI_VERSION</span><span class="si">}</span>/software/linux
-<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nv">eessi_tar_gz</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/eessi-</span><span class="si">${</span><span class="nv">EESSI_VERSION</span><span class="si">}</span><span class="s2">-haswell.tar.gz&quot;</span>
+<a id="__codelineno-14-3" name="__codelineno-14-3" href="#__codelineno-14-3"></a><span class="nv">eessi_tar_gz</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/eessi-</span><span class="si">${</span><span class="nv">EESSI_VERSION</span><span class="si">}</span><span class="s2">-haswell.tar.gz"</span>
 <a id="__codelineno-14-4" name="__codelineno-14-4" href="#__codelineno-14-4"></a>tar<span class="w"> </span>cvfz<span class="w"> </span><span class="si">${</span><span class="nv">eessi_tar_gz</span><span class="si">}</span><span class="w"> </span>x86_64/intel/haswell
 </code></pre></div>
 <p>To create a tarball for specific installations, make sure you pick up both
 the software installation directories and the corresponding module files:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">eessi_tar_gz</span><span class="o">=</span><span class="s2">&quot;</span><span class="nv">$HOME</span><span class="s2">/eessi-</span><span class="si">${</span><span class="nv">EESSI_VERSION</span><span class="si">}</span><span class="s2">-haswell-OpenFOAM.tar.gz&quot;</span>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-15-1" name="__codelineno-15-1" href="#__codelineno-15-1"></a><span class="nv">eessi_tar_gz</span><span class="o">=</span><span class="s2">"</span><span class="nv">$HOME</span><span class="s2">/eessi-</span><span class="si">${</span><span class="nv">EESSI_VERSION</span><span class="si">}</span><span class="s2">-haswell-OpenFOAM.tar.gz"</span>
 <a id="__codelineno-15-2" name="__codelineno-15-2" href="#__codelineno-15-2"></a>
 <a id="__codelineno-15-3" name="__codelineno-15-3" href="#__codelineno-15-3"></a>tar<span class="w"> </span>cvfz<span class="w"> </span><span class="si">${</span><span class="nv">eessi_tar_gz</span><span class="si">}</span><span class="w"> </span>x86_64/intel/haswell/software/OpenFOAM<span class="w"> </span>modules/all//OpenFOAM
 </code></pre></div>
@@ -6161,11 +6299,16 @@ If needed, you can ask for help in the
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+      <!-- Copyright and theme information -->
+<div class="md-copyright">
+  
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a
+      href="https://squidfunk.github.io/mkdocs-material/"
+      target="_blank" rel="noopener"
+    >
       Material for MkDocs
     </a>
   
@@ -6203,7 +6346,7 @@ If needed, you can ask for help in the
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["instant", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs" type="module"></script>
       

@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../../../../img/logos/EESSI.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -478,9 +478,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../../../../available_software/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -494,7 +505,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Available software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../available_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../available_software_riscv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -664,7 +747,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../../../../repositories/riscv.eessi.io/" class="md-nav__link">
+      <a href="../../../../../repositories/dev.eessi.io-riscv/" class="md-nav__link">
         
   
   
@@ -941,6 +1024,34 @@
     
   
     macOS with Lima
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../../getting_access/eessi_Apple_container_tool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    macOS with container tool
   
 
     
@@ -5513,6 +5624,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../../../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -5522,10 +5660,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
             
   
   
@@ -5543,8 +5681,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -6140,7 +6278,7 @@ we are currently using it in our examples.</p>
 <a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
 <a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a># Build GROMACS module from EasyBuild
 <a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>cc=$(nvidia-smi --query-gpu=compute_cap --format=csv,noheader | head -1)
-<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>eb --force --robot GROMACS-2023.3-foss-2023a-CUDA-12.1.1-PLUMED-2.9.0.eb --cuda-compute-capabilities=&quot;$cc&quot;
+<a id="__codelineno-1-18" name="__codelineno-1-18" href="#__codelineno-1-18"></a>eb --force --robot GROMACS-2023.3-foss-2023a-CUDA-12.1.1-PLUMED-2.9.0.eb --cuda-compute-capabilities="$cc"
 <a id="__codelineno-1-19" name="__codelineno-1-19" href="#__codelineno-1-19"></a>
 <a id="__codelineno-1-20" name="__codelineno-1-20" href="#__codelineno-1-20"></a># Load GROMACS module
 <a id="__codelineno-1-21" name="__codelineno-1-21" href="#__codelineno-1-21"></a>module load GROMACS/2023.3-foss-2023a-CUDA-12.1.1-PLUMED-2.9.0
@@ -6180,12 +6318,12 @@ but includes it to correct PATH which EESSI recognize.
 <a id="__codelineno-2-12" name="__codelineno-2-12" href="#__codelineno-2-12"></a>
 <a id="__codelineno-2-13" name="__codelineno-2-13" href="#__codelineno-2-13"></a># Install CUDA to host_injections
 <a id="__codelineno-2-14" name="__codelineno-2-14" href="#__codelineno-2-14"></a># /cvmfs/software.eessi.io/versions/${EESSI_VERSION}/scripts/gpu_support/nvidia/install_cuda_host_injections.sh
-<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a># We are using modified version of this script, which doesn&#39;t use `--installpath-modules=${tmpdir}`
+<a id="__codelineno-2-15" name="__codelineno-2-15" href="#__codelineno-2-15"></a># We are using modified version of this script, which doesn't use `--installpath-modules=${tmpdir}`
 <a id="__codelineno-2-16" name="__codelineno-2-16" href="#__codelineno-2-16"></a>./scripts/gpu_support/nvidia/install_cuda_host_injections.sh --cuda-version 12.1.1 --temp-dir /tmp/$USER/EESSI --accept-cuda-eula
 <a id="__codelineno-2-17" name="__codelineno-2-17" href="#__codelineno-2-17"></a>
 <a id="__codelineno-2-18" name="__codelineno-2-18" href="#__codelineno-2-18"></a># Build GROMACS module from EasyBuild
 <a id="__codelineno-2-19" name="__codelineno-2-19" href="#__codelineno-2-19"></a>cc=$(nvidia-smi --query-gpu=compute_cap --format=csv,noheader | head -1)
-<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>eb --force --robot GROMACS-2023.3-foss-2023a-CUDA-12.1.1-PLUMED-2.9.0.eb --cuda-compute-capabilities=&quot;$cc&quot;
+<a id="__codelineno-2-20" name="__codelineno-2-20" href="#__codelineno-2-20"></a>eb --force --robot GROMACS-2023.3-foss-2023a-CUDA-12.1.1-PLUMED-2.9.0.eb --cuda-compute-capabilities="$cc"
 <a id="__codelineno-2-21" name="__codelineno-2-21" href="#__codelineno-2-21"></a>
 <a id="__codelineno-2-22" name="__codelineno-2-22" href="#__codelineno-2-22"></a># Load GROMACS module
 <a id="__codelineno-2-23" name="__codelineno-2-23" href="#__codelineno-2-23"></a>module load GROMACS/2023.3-foss-2023a-CUDA-12.1.1-PLUMED-2.9.0
@@ -6288,7 +6426,7 @@ To build GPU-enabled software, we first need a <a href="../../../../../site_spec
 <a id="__codelineno-7-2" name="__codelineno-7-2" href="#__codelineno-7-2"></a>No module(s) or extension(s) found!
 <a id="__codelineno-7-3" name="__codelineno-7-3" href="#__codelineno-7-3"></a>
 <a id="__codelineno-7-4" name="__codelineno-7-4" href="#__codelineno-7-4"></a>$ cc=$(nvidia-smi --query-gpu=compute_cap --format=csv,noheader | head -1)
-<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>$ eb --force --robot CUDA-Samples-12.1-GCC-12.3.0-CUDA-12.1.1.eb --cuda-compute-capabilities=&quot;$cc&quot;
+<a id="__codelineno-7-5" name="__codelineno-7-5" href="#__codelineno-7-5"></a>$ eb --force --robot CUDA-Samples-12.1-GCC-12.3.0-CUDA-12.1.1.eb --cuda-compute-capabilities="$cc"
 <a id="__codelineno-7-6" name="__codelineno-7-6" href="#__codelineno-7-6"></a>== Temporary log file in case of crash ...
 <a id="__codelineno-7-7" name="__codelineno-7-7" href="#__codelineno-7-7"></a>... 
 <a id="__codelineno-7-8" name="__codelineno-7-8" href="#__codelineno-7-8"></a> --- rest of the output ---
@@ -6305,7 +6443,7 @@ To build GPU-enabled software, we first need a <a href="../../../../../site_spec
 <a id="__codelineno-7-19" name="__codelineno-7-19" href="#__codelineno-7-19"></a>
 <a id="__codelineno-7-20" name="__codelineno-7-20" href="#__codelineno-7-20"></a>Detected 1 CUDA Capable device(s)
 <a id="__codelineno-7-21" name="__codelineno-7-21" href="#__codelineno-7-21"></a>
-<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>Device 0: &quot;NVIDIA GeForce RTX 2060&quot;
+<a id="__codelineno-7-22" name="__codelineno-7-22" href="#__codelineno-7-22"></a>Device 0: "NVIDIA GeForce RTX 2060"
 <a id="__codelineno-7-23" name="__codelineno-7-23" href="#__codelineno-7-23"></a>  CUDA Driver Version / Runtime Version          12.4 / 12.1
 <a id="__codelineno-7-24" name="__codelineno-7-24" href="#__codelineno-7-24"></a>  CUDA Capability Major/Minor version number:    7.5
 <a id="__codelineno-7-25" name="__codelineno-7-25" href="#__codelineno-7-25"></a>  Total amount of global memory:                 5917 MBytes (6204162048 bytes)
@@ -6349,9 +6487,9 @@ To build GPU-enabled software, we first need a <a href="../../../../../site_spec
 <p>We're also going to build <code>GROMACS</code> and <code>ESPResSo</code> with GPU support. All of this can be done in a similar way as building CUDA above, with just EESSI-extend and EasyBuild.</p>
 <div class="highlight"><pre><span></span><code><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>cc=$(nvidia-smi --query-gpu=compute_cap --format=csv,noheader | head -1)
 <a id="__codelineno-8-2" name="__codelineno-8-2" href="#__codelineno-8-2"></a>
-<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>eb --force --robot GROMACS-2023.3-foss-2023a-CUDA-12.1.1-PLUMED-2.9.0.eb --cuda-compute-capabilities=&quot;$cc&quot;
+<a id="__codelineno-8-3" name="__codelineno-8-3" href="#__codelineno-8-3"></a>eb --force --robot GROMACS-2023.3-foss-2023a-CUDA-12.1.1-PLUMED-2.9.0.eb --cuda-compute-capabilities="$cc"
 <a id="__codelineno-8-4" name="__codelineno-8-4" href="#__codelineno-8-4"></a>
-<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>eb --force --robot ESPResSo-4.2.2-foss-2023a-CUDA-12.1.1.eb --cuda-compute-capabilities=&quot;$cc&quot;
+<a id="__codelineno-8-5" name="__codelineno-8-5" href="#__codelineno-8-5"></a>eb --force --robot ESPResSo-4.2.2-foss-2023a-CUDA-12.1.1.eb --cuda-compute-capabilities="$cc"
 </code></pre></div>
 <p>After this, we can run GROMACS and ESPResSo with GPU support enabled.</p>
 <p>For testing and reproducibility, we created an installation script to provide a common approach for testing various systems. This script is described in detail below.</p>
@@ -6614,11 +6752,21 @@ On Fedora, /tmp is mounted as a tmpfs with a limited size, which keeps everythin
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+      <!-- Copyright and theme information -->
+<div class="md-copyright">
+  
+    <div class="md-copyright__highlight" data-eessi-blog-disclaimer="true">
+      Blog posts are the responsibility of their authors. The EESSI community does not
+      independently verify the claims or data they present.
+    </div>
+  
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a
+      href="https://squidfunk.github.io/mkdocs-material/"
+      target="_blank" rel="noopener"
+    >
       Material for MkDocs
     </a>
   
@@ -6656,7 +6804,7 @@ On Fedora, /tmp is mounted as a tmpfs with a limited size, which keeps everythin
       <script id="__config" type="application/json">{"annotate": null, "base": "../../../../..", "features": ["instant", "content.code.annotate"], "search": "../../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs" type="module"></script>
       

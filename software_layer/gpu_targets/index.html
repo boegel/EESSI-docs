@@ -21,7 +21,7 @@
       
       
       <link rel="icon" href="../../img/logos/EESSI.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.4">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -29,7 +29,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -189,6 +189,8 @@
         <div class="md-main__inner md-grid">
           
             
+              
+                
               
               <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
                 <div class="md-sidebar__scrollwrap">
@@ -547,9 +549,20 @@
   
   
   
-    <li class="md-nav__item">
-      <a href="../../available_software/" class="md-nav__link">
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
         
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
   
   
   <span class="md-ellipsis">
@@ -563,7 +576,79 @@
   
   
 
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Available software
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../available_software/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Production
+  
+
+    
+  </span>
+  
+  
+
       </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../available_software_riscv/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    RISC-V
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
     </li>
   
 
@@ -733,7 +818,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../../repositories/riscv.eessi.io/" class="md-nav__link">
+      <a href="../../repositories/dev.eessi.io-riscv/" class="md-nav__link">
         
   
   
@@ -1010,6 +1095,34 @@
     
   
     macOS with Lima
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../getting_access/eessi_Apple_container_tool/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    macOS with container tool
   
 
     
@@ -5582,6 +5695,33 @@
   
   
   
+    <li class="md-nav__item">
+      <a href="../../roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
     
     
     
@@ -5591,10 +5731,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_12" >
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_13" >
         
           
-          <label class="md-nav__link" for="__nav_12" id="__nav_12_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_13" id="__nav_13_label" tabindex="0">
             
   
   
@@ -5612,8 +5752,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_12_label" aria-expanded="false">
-          <label class="md-nav__title" for="__nav_12">
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_13_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_13">
             <span class="md-nav__icon md-icon"></span>
             
   
@@ -5863,7 +6003,9 @@
             
             
               
-              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
                 <div class="md-sidebar__scrollwrap">
                   <div class="md-sidebar__inner">
                     
@@ -5917,6 +6059,8 @@
               <article class="md-content__inner md-typeset">
                 
                   
+  
+
 
 
   
@@ -5925,125 +6069,206 @@
 
 <h1 id="gpu-targets">GPU targets<a class="headerlink" href="#gpu-targets" title="Permanent link">&para;</a></h1>
 <h2 id="nvidia">NVIDIA<a class="headerlink" href="#nvidia" title="Permanent link">&para;</a></h2>
-<p>EESSI includes optimized software installations for major NVIDIA GPU CUDA Compute Capabilities 7.0, 8.0 and 9.0, for all CPU targets listed in <a href="../cpu_targets/">CPU targets</a>.</p>
-<p>NVIDIA guarantees forwards compatibility within a major CUDA Compute Capability (i.e. a GPU with CUDA Compute Capability 8.6 can run code built for CUDA Compute Capability 8.0).
-This means that all NVIDIA GPUs with Compute Capability 7.x, 8.x and 9.x are supported (see also <a href="https://developer.nvidia.com/cuda-gpus">here</a>).</p>
-<p>The decision to only ship code optimized for the major GPU architectures was made to keep the amount of software builds that need to be done at a reasonable level.
-Even just building for the major CUDA Compute Capabilities for all CPU targets currently requires 39 builds (13 CPU targets times 3 GPU targets).</p>
+<p>Each version of EESSI includes optimized software installations for a selected range of major NVIDIA GPU CUDA Compute Capabilities,
+for all CPU targets listed in <a href="../cpu_targets/">CPU targets</a>.</p>
+<p>NVIDIA guarantees forward compatibility within a major CUDA Compute Capability, i.e. a GPU with CUDA Compute Capability 8.6 can run code built for CUDA Compute Capability 8.0.
+This means that a given EESSI version supports all NVIDIA GPUs with Compute Capability X.Y if the table below includes support for Compute Capability X.0.
+On the <a href="https://developer.nvidia.com/cuda/gpus">NVIDIA website</a> you can find the Compute Capability of your GPU.</p>
+<p>The decision to only ship code optimized for the major GPU architectures was made to keep the number of software builds that need to be done at a reasonable level.
+Even just building a single application for five major CUDA Compute Capabilities for all CPU targets supported by EESSI version 2025.06 would require 75 builds in total (15 CPU targets times 5 GPU targets).</p>
 <p>Not all builds are done natively, i.e. on a system actually containing a CPU and GPU of the type that is being built for.</p>
-<p>The table below shows an overview of the supported CPU/GPU architectures (marked with <code>x</code>).
+<p>The table below shows an overview of the supported CPU/GPU architectures for the different EESSI versions (marked with <code>x</code>).
 The combinations marked with an '<code>N</code>' are built natively; others are built on a CPU-only system.</p>
 <table>
     <thead>
         <tr>
-            <th colspan=3></th>
-            <th colspan=3><div align="center">CUDA compute capability</div></th>
+            <th></th>
+            <th colspan=6><div align="center">CUDA compute capability</div></th>
         </tr>
         <tr>
-            <th colspan=3><div align="center">CPU microarchitecture</div></th>
+            <th><div align="center">CPU microarchitecture</div></th>
             <th>7.0</th>
+            <th>7.5</th>
             <th>8.0</th>
             <th>9.0</th>
+            <th>10.0</th>
+            <th>12.0</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-            <td rowspan=4>aarch64</td>
-            <td colspan=2>generic</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td><code>aarch64/generic</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td colspan=2>a64fx</td>
+            <td><code>aarch64/a64fx</code></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
             <td>-</td>
             <td>-</td>
             <td>-</td>
         </tr>
         <tr>
-            <td colspan=2>neoverse_n1</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td><code>aarch64/aws/graviton4</code></td>
+            <td>-</td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td colspan=2>neoverse_v1</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td><code>aarch64/neoverse_n1</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td>nvidia</td>
-            <td>grace</td>
-            <td>x</td>
-            <td>x</td>
-            <td>N</td>
+            <td><code>aarch64/neoverse_v1</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td colspan=6></td>
+            <td><code>aarch64/nvidia/grace</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: N</span> <span class="software-eessi-version-202506">2025.06: N</span> <span class="software-eessi-version-202606">2026.06: N</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td rowspan=9>x86_64</td>
-            <td colspan=2>generic</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td colspan=7></td>
         </tr>
         <tr>
-            <td rowspan=5>intel</td>
-            <td>haswell</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td><code>riscv64/generic</code></td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
         </tr>
         <tr>
-            <td>skylake_avx512</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td colspan=7></td>
         </tr>
         <tr>
-            <td>cascadelake</td>
-            <td>N</td>
-            <td>x</td>
-            <td>x</td>
+            <td><code>x86_64/generic</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td>icelake</td>
-            <td>x</td>
-            <td>N</td>
-            <td>x</td>
+            <td><code>x86_64/intel/haswell</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td>sapphirerapids</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
+            <td><code>x86_64/intel/skylake_avx512</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: N</span> <span class="software-eessi-version-202506">2025.06: N</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td rowspan=3>amd</td>
-            <td>zen2</td>
-            <td>x</td>
-            <td>N</td>
-            <td>x</td>
+            <td><code>x86_64/intel/cascadelake</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: N</span> <span class="software-eessi-version-202506">2025.06: N</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td>zen3</td>
-            <td>x</td>
-            <td>N</td>
-            <td>x</td>
+            <td><code>x86_64/intel/icelake</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: N</span> <span class="software-eessi-version-202506">2025.06: N</span> <span class="software-eessi-version-202606">2026.06: N</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
         </tr>
         <tr>
-            <td>zen4</td>
-            <td>x</td>
-            <td>x</td>
-            <td>N</td>
+            <td><code>x86_64/intel/sapphirerapids</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+        </tr>
+        <tr>
+            <td><code>x86_64/intel/graniterapids</code></td>
+            <td>-</td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+        </tr>
+        <tr>
+            <td><code>x86_64/amd/zen2</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: N</span> <span class="software-eessi-version-202506">2025.06: N</span> <span class="software-eessi-version-202606">2026.06: N</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+        </tr>
+        <tr>
+            <td><code>x86_64/amd/zen3</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: N</span> <span class="software-eessi-version-202506">2025.06: N</span> <span class="software-eessi-version-202606">2026.06: N</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+        </tr>
+        <tr>
+            <td><code>x86_64/amd/zen4</code></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: x</span> <span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202306">2023.06: N</span> <span class="software-eessi-version-202506">2025.06: N</span> <span class="software-eessi-version-202606">2026.06: N</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+        </tr>
+        <tr>
+            <td><code>x86_64/amd/zen5</code></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span></td>
+            <td><span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: x</span> <span class="software-eessi-version-202606">2026.06: x</span></td>
+            <td><span class="software-eessi-version-202506">2025.06: N</span> <span class="software-eessi-version-202606">2026.06: N</span></td>
         </tr>
     </tbody>
 </table>
 
 <div class="admonition info">
-<p class="admonition-title">No NIVIDIA GPU support for A64FX</p>
+<p class="admonition-title">No NVIDIA GPU support for A64FX</p>
 <p>Note that there is no NVIDIA GPU support for A64FX at the moment, as we are not aware of any systems with A64FX CPUs and NVIDIA GPUs.</p>
 </div>
 <h2 id="amd">AMD<a class="headerlink" href="#amd" title="Permanent link">&para;</a></h2>
@@ -6068,7 +6293,7 @@ The combinations marked with an '<code>N</code>' are built natively; others are 
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="November 18, 2025 08:05:39 UTC">November 18, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date" title="September 3, 2026 18:07:22 UTC">September 3, 2026</span>
   </span>
 
     
@@ -6078,6 +6303,8 @@ The combinations marked with an '<code>N</code>' are built natively; others are 
   </aside>
 
 
+
+  
 
 
 
@@ -6095,11 +6322,16 @@ The combinations marked with an '<code>N</code>' are built natively; others are 
   
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
-      <div class="md-copyright">
+      <!-- Copyright and theme information -->
+<div class="md-copyright">
+  
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+    <a
+      href="https://squidfunk.github.io/mkdocs-material/"
+      target="_blank" rel="noopener"
+    >
       Material for MkDocs
     </a>
   
@@ -6137,7 +6369,7 @@ The combinations marked with an '<code>N</code>' are built natively; others are 
       <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["instant", "content.code.annotate"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
         <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs" type="module"></script>
       
